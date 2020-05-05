@@ -66,10 +66,10 @@ file: hcIIIIII_MMMMMMMM.data - the raw data for the Mset resolution MMMMMMMM (a 
 an 8-bit bitmap. If renamed, the data can be viewed externally. Gray colored pixel = untested, black = identiefied as Mset-interior,
 yellow = analyzed but not possible to judge as Mset-interior.
 
-The software also saves a file with double the size: every Mtile issplit into a grid of 2x2 (rewfinement) with the
+The software also saves a file with double the size: every Mtile is split into a grid of 2x2 (rewfinement) with the
 same color: only black, gray are present, yellow is converted to gray. This is the input file for the next higher refinement
 level M+1.
-CAVE: There is no check whether this double-sized file already exits. If so, it will be overwritten.
+<br><b>CAVE</b> There is no check whether this double-sized file already exits. If so, it will be overwritten.
 
 
 ========<br>
