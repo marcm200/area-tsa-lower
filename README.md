@@ -3,13 +3,13 @@
 # area-tsa-lower
 Guaranteed lower area bound for the Mandelbrot set
 
-Summary
+<b>Summary</b><br>
 A method based on interval arithmetics and cell mapping is presented to compute
 a lower bound on the area of the Mandelbrot set of 1.4932 that comes with a mathematical
 guarantee. The reliable computational steps are guided through pointsampled
 data towards positions in the complex plane where possible Mandelbrot
 interior resides. Simple connectivity of the set is exploited to 
-ood-ll the inside
+flood-fill the inside
 of closed reliably analyzed region borders. Due to the highly parallelizable
 nature of the algorithm and as all computations were performed on a personal
 computer, tighter bounds are fairly easy to obtain using more equipped hardware.
@@ -19,30 +19,29 @@ A full description of the algorithm is found in the pdf file in the current dire
 The code is optimized for Windows 10 64 bit and demands a large amount of memory. If using win32, comment in define CHUNK512 in the source code.
 
 
-command-line parameters for AREATSA.EXE
+command-line parameters
 
 1. Parameters
 2. Output
 3. Input
 
-
-=============
-1. refinement
-=============
+<br>
+refinement<br>
+=============<br>
 
 LENJ=j - refinement j for the orbit construction, i.e. 2^j x 2^j Jtiles
 
 LENM=m - refinement m for the active region, i.e. 2^m x 2^m Mtiles
 
 
-parallelicity
-=============
+parallelicity<br>
+=============<br>
 
 PARALLEL=n
 
 
-Flags to control routine calls:
-===============================
+Flags to control routine calls:<br>
+===============================<br>
 
 NOTWICE - active region not stored in twice the size for future refinements
 
@@ -53,11 +52,11 @@ IMG - saves a 2-color bitmap showing interior-identified Mtiles (black)
 RESET - reads active regions and resets every non-black, non-white pixel to gray
 
 
-=========
-2. OUTPUT
-=========
+=========<br>
+2. OUTPUT<br>
+=========<br>
 
-values for Mtiles analyzed, Mtiles set to black via CM/IA orbit construction or flood-filled
+Log file with values for Mtiles analyzed, Mtiles set to black via CM/IA orbit construction or flood-filled
 lower bound for the area of the Mandelbrot set as a rational number
 
 file: hcIIIIII.pos - stores two double values = the lower left corner coordinate of
@@ -73,9 +72,9 @@ level M+1.
 CAVE: There is no check whether this double-sized file already exits. If so, it will be overwritten.
 
 
-========
-2. INPUT
-========
+========<br>
+2. INPUT<br>
+========<br>
 
 command-line parameters
 
