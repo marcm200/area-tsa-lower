@@ -5,12 +5,13 @@ Guaranteed lower area bound for the Mandelbrot set
 
 <b>Summary</b><br>
 A method based on interval arithmetics and cell mapping is presented to compute
-a lower bound on the area of the Mandelbrot set of 1.4932 that comes with a mathematical
+a lower bound on the area of the Mandelbrot set of 1.4954 that comes with a mathematical
 guarantee. The reliable computational steps are guided through pointsampled
 data towards positions in the complex plane where possible Mandelbrot
 interior resides. Simple connectivity of the set is exploited to 
 flood-fill the inside
-of closed reliably analyzed region borders. Due to the highly parallelizable
+of closed reliably analyzed region borders. Components to period-3 and -4
+are directly set using previously published closed formulae. Due to the highly parallelizable
 nature of the algorithm and as all computations were performed on a personal
 computer, tighter bounds are fairly easy to obtain using more equipped hardware.
 
