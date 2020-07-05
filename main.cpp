@@ -10,6 +10,12 @@
 
 */
 
+/*
+
+	2020-07 in function readHCfile: branch RESETCOLOR was without effect => activated.
+
+*/
+
 #include "math.h"
 #include "stdio.h"
 #include "stdlib.h"
@@ -1595,7 +1601,7 @@ int8_t readHCfile(HCenter& ahc,const int32_t aid) {
 				if (
 					(f != MTILE_BLACK) &&
 					(f != MTILE_WHITE)
-				) ahc.setMtile(x,y,MTILE_GRAY);
+				) ahc.msetregion.setPunkt(x,y,MTILE_GRAY);
 			} // x
 		} // y
 	}
